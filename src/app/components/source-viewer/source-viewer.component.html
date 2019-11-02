@@ -1,0 +1,16 @@
+<span *ngIf="item.Type == 'Training' || item.Type == 'HangOut' || item.Type == 'Gift'">
+    {{item.Npc}} - {{item.Type}}
+</span>
+
+<span *ngIf="item.Type == 'Quest'">
+    Quest
+</span>
+
+<span *ngIf="item.Type == 'Item'">
+    {{getItem(item.ItemTypeId).Item.Name}}
+    <app-item-viewer [item]="getItem(item.ItemTypeId).Item"></app-item-viewer>
+</span>
+
+<p>
+    {{item | json}}
+</p>

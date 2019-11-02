@@ -1,0 +1,13 @@
+.item-display {
+  display: table-cell;
+
+  span {
+    min-width: 160px;
+    display: inline-block;
+    line-height: 28px;
+  }
+
+  img {
+    float: right;
+  }
+}
